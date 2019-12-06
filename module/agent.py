@@ -2,19 +2,19 @@ import numpy as np
 
 def EG(costs,parms):
     '''
-    Epsilon greedy action.
+    TODO: Epsilon greedy action.
     '''
     return 0
 
 def UCB(costs,parms):
     '''
-    UCB action.
+    TODO: UCB action.
     '''
     return 0
 
 def TS(costs,parms):
     '''
-    Thompson sampling action.
+    TODO: Thompson sampling action.
     '''
     return 0
 
@@ -43,10 +43,13 @@ class AGENT:
         action = None
 
         if self.policy == 'EG':
+            # TODO: set correctly self.parms
             action = EG(self.costs, self.parms)
         elif self.policy == 'UCB':
+            # TODO: set correctly self.t, or could be self.parms
             action = UCB(self.costs, self.t)
         elif self.policy == 'TS':
+            # TODO: set correctly self.parms
             action = TS(self.costs, self.parms)
         else:
             print("Unrecoginized strategy!")
