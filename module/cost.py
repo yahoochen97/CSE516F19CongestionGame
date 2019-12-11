@@ -9,4 +9,5 @@ def GetLinearCost(k,b):
     '''
     def f(x): 
         return k*x+b
-    return f 
+
+    return f

@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class ENVIRONMENT:
     def __init__(self, edges, paths):
         '''
@@ -12,7 +13,7 @@ class ENVIRONMENT:
         - paths: a list of path which includes indexes of edges   
         '''
         self.edges = edges
-        self.flows = np.zeros((len(edges),1))
+        self.flows = np.zeros((len(edges), 1))
         self.paths = []
         for path in paths:
             self.add_path(path)
@@ -37,4 +38,4 @@ class ENVIRONMENT:
         return self.edges[idx](self.flows[idx])
 
     def reset(self):
-        self.flows = np.zeros((len(self.edges),1))
+        self.flows = np.zeros((len(self.edges), 1))
